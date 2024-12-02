@@ -14,7 +14,7 @@ app.use(express.json());
 //option 1: Allow All Origins with Default cors(*)
 app.use(cors(
     {
-        origin: ["https://library-management-app-brown.vercel.app"],
+        origin: ["https://library-management-q8ssc6uet-siddhant-janbandhus-projects.vercel.app/"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
