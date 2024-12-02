@@ -22,7 +22,7 @@ const CreateBooks = () => {
         };
         setLoading(true);
         axios
-            .post('https://library-management-api-phi.vercel.app/?vercelToolbarCode=EHxMTG6ZZ8_r_Uz/books', data)
+            .post('https://library-management-api-phi.vercel.app/books', data)
             .then(() => {
                 setLoading(false);
                 enqueueSnackbar('Book Created successfully', { variant: 'success' });
