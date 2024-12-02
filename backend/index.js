@@ -12,13 +12,15 @@ app.use(express.json());
 
 //Middleware for handling CORS POLICY
 //option 1: Allow All Origins with Default cors(*)
-app.use(cors(
-    {
-        origin: ["https://library-management-app-brown.vercel.app"],
-        methods: ["POST", "GET", "PUT", "DELETE"],
-        credentials: true
-    }
-));
+app.use(cors({
+    origin: [
+        "https://library-management-app-brown.vercel.app", 
+        "https://library-management-cn0w6owri-siddhant-janbandhus-projects.vercel.app"
+    ], // Allow both origins
+    methods: ["POST", "GET", "PUT", "DELETE"], // Allowed HTTP methods
+    credentials: true, // Allow cookies to be sent
+}));
+
 
 //Option 2: Allow Custom Origins
 // app.use(
